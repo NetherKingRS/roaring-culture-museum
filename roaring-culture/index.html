@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Roaring Culture: an interactive museum of American life in the 1920s, with exhibits, primary sources, and games.">
+  <title>The Roaring Culture Museum · 1920–1929</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="config.js"></script><script defer src="content.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header><a class="brand" href="#museum" aria-label="Roaring Culture Museum home"><span class="brand-mark">RC</span><span>THE ROARING<br><strong>CULTURE MUSEUM</strong></span></a><nav aria-label="Main navigation"><button data-tab="museum" class="active">The museum</button><button data-tab="arcade">The arcade</button><button data-tab="video">Video studio</button><button data-tab="reference">Teacher reference</button></nav><button id="passportButton" class="passport-button">✧ <span id="stampCount">0 / 6</span> stamps</button></header>
+<main id="main" tabindex="-1"></main>
+<footer><span>THE ROARING CULTURE MUSEUM</span><span>A decade of possibility. A decade of contradictions.</span><button id="helpButton">Visitor help ↗</button></footer>
+<dialog id="exhibitDialog" aria-labelledby="dialogTitle"><button class="close" aria-label="Close exhibit">×</button><div id="dialogBody"></div></dialog>
+<dialog id="introDialog" aria-labelledby="introTitle"><div class="intro-border"><p class="eyebrow">YOUR TICKET TO ANOTHER TIME</p><h1 id="introTitle">Welcome to<br>the <em>Roaring Twenties.</em></h1><p>One decade. Six rooms. A whole new way of living.</p><div id="introPlayer"></div><p id="introStatus" role="status"></p><div class="button-row" id="introActions"></div><details id="introTranscript"><summary>Read the introduction transcript</summary><p></p></details><button class="text-button" id="introSettings">Video setup & help ↗</button></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript>This interactive museum needs JavaScript enabled. Enable JavaScript and reload to explore the exhibits.</noscript>
+</body></html>
